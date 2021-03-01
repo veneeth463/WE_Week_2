@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Inheritance Demo</h2>
+
+<p id="demo"></p>
+
+<script>
+class Student{
+
+constructor(name,rollno){
+ this.name = name
+ this.rollno = rollno
+}
+
+getName()
+{
+ return this.name;
+}
+}
+
+class Csestudent extends  Student{
+
+constructor(name,rollno,course){
+  super(name,rollno);
+ this.course = course;
+}
+
+getCourse(){
+  return this.course
+}
+}
+
+const student = new Csestudent('king',20,'JavaScript');
+document.getElementById("demo").innerHTML = "Name : " + student.name + "<br> Roll no : " + student.rollno + " <br> Course : "+student.course;
+</script>
+
+</body>
+</html>

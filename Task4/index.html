@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript class Demo</h2>
+
+<p id="demo"></p>
+
+<script>
+class Student{
+
+constructor(name,rollno,section){
+ this.name = name
+ this.rollno = rollno
+ this.section=section;
+}
+
+getName()
+{
+ return this.name;
+}
+}
+
+const student1 = new Student('veneeth','18B81A05P4','CSE-D')
+console.log(student1);
+document.getElementById("demo").innerHTML = "Name : " + student1.name + "<br> Roll no : " + student1.rollno + " <br> Course : "+student1.section;
+</script>
+
+</body>
+</html>
